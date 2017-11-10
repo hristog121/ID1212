@@ -1,10 +1,11 @@
 package client;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
@@ -13,15 +14,20 @@ import java.util.Scanner;
 public class Client {
 
     private static final int PORT = 1112;
-
-
+    private static final String TIME_TO_INPUT = "Please guess a letter";
+    private Socket hangmanSocket = null;
+    private PrintWriter outstream = null;
+    private BufferedReader instream = null;
 
 
     public static void main(String[] args) throws IOException {
-        Socket hangmanSocket = null;
-        PrintWriter outstream = null;
-        BufferedReader instream = null;
+        Client client = new Client();
+        client.connectToServer();
+        client.printInstructions();
+        client.run();
+    }
 
+    private void connectToServer() {
         try
         {
             hangmanSocket = new Socket("127.0.0.1", 1112);
@@ -38,36 +44,46 @@ public class Client {
             System.err.println(e);
             System.exit(1);
         }
+    }
+    // This method will print the welcome message to the users
+    private void printInstructions() {
+        System.out.println("Welcome to the 97th Hangman games! I hope you can HANG out for a while!");
+        System.out.println("If you want to quite just type '!' ");
 
+        System.out.println();
+    }
 
-        // #############
-        // ## INITIALIZE
-        // #############
-        printInstructions();
+    private void run() {
+        try {
+            while (hangmanSocket.isConnected()) {
+               //  System.out.println("Inside game");
+                boolean received = true;
+                //System.out.println(received);
+                while (received) {
+                    //System.out.print("Waiting -> ");
+                    String lineFromServer = instream.readLine();
 
+                    if (lineFromServer != null) {
+                        //System.out.println("Printing from server");
+                        System.out.println(lineFromServer);
 
+                        if (lineFromServer.equals(TIME_TO_INPUT)) {
+                            readAndSendUserInput();
+                        }
 
-        while(hangmanSocket.isConnected())
-        {
-            while(instream.ready())
-            {
-                System.out.println(instream.readLine());
+                        received = true;
+                    } else {
+                        received = false;
+                    }
+                }
             }
-            Scanner sc = new Scanner(System.in);
-            char input = sc.next().charAt(0);
-
-            // Quit If ! is the character
-            if(input == '!')
-            {
-                // Cleanup
-                outstream.close();
-                instream.close();
+        } catch (IOException ex){
+            ex.printStackTrace();
+        } finally {
+            try {
                 hangmanSocket.close();
-                System.exit(0);
-            }
-            else
-            {
-                outstream.println(input);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
 
@@ -75,14 +91,31 @@ public class Client {
         while(true);
     }
 
-    private static void printInstructions() {
-        System.out.println("Welcome to the 97th Hangman game! I hope you can HANG out for a while!");
-        System.out.println("If you want to quite just type Q");
+    private void readAndSendUserInput() {
+        //System.out.println(instream.readLine());
+        System.out.println("Before scanning");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
 
-        System.out.println();
+        // Quit If ! is the character
+        if(input == "!")
+        {
+            // Cleanup
+            try {
+                outstream.close();
+                instream.close();
+                hangmanSocket.close();
+            } catch (IOException ex){
+                ex.printStackTrace();
+            }
+            System.exit(0);
+        }
+        else
+        {
+            System.out.println("Sending to server");
+            outstream.println(input);
+        }
     }
-
-
 }
 
 
