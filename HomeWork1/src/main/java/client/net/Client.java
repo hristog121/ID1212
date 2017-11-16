@@ -1,4 +1,4 @@
-package client;
+package client.net;
 
 
 import java.io.BufferedReader;
@@ -11,22 +11,15 @@ import java.util.Scanner;
 
 
 public class Client {
-
+    //VOLATILE SO THEY CAN BE SAFLY ACCESED FROM DIFFERENT THREADS
     private static final int PORT = 1112;
     private volatile Socket hangmanSocket = null;
     private volatile PrintWriter outstream = null;
     private volatile BufferedReader instream = null;
     private volatile boolean isGameRunning;
 
-    public static void main(String[] args) throws IOException {
-        Client client = new Client();
-        client.connectToServer();
-        client.printInstructions();
-        client.readAndSendUserInput();
-        client.runConnection();
-    }
 
-    private void connectToServer() {
+    public void connectToServer() {
         try {
             hangmanSocket = new Socket("127.0.0.1", PORT);
             outstream = new PrintWriter(hangmanSocket.getOutputStream(), true);
@@ -41,22 +34,24 @@ public class Client {
     }
 
     // This method will print the welcome message to the users
-    private void printInstructions() {
+    //TODO This should move to other place may be
+    public void printInstructions() {
         System.out.println("Welcome to the 97th Hangman games! I hope you can HANG out for a while!");
+        System.out.println("To start the game please type 'start' ");
         System.out.println("If you want to quite just type '!' ");
         isGameRunning = true;
 
         System.out.println();
     }
 
-    private void runConnection() {
+    public void runConnection() {
         try {
             while (hangmanSocket.isConnected() && isGameRunning) {
 
                 String lineFromServer = instream.readLine();
                 if (lineFromServer != null) {
                     System.out.println(lineFromServer);
-                } else{
+                } else {
                     isGameRunning = false;
                     System.out.println("Server connection is closed! Exiting game!");
                 }
@@ -68,14 +63,19 @@ public class Client {
         }
     }
 
-    private void readAndSendUserInput() {
-        //Create a new thread
+    //Takes reads and send user input to server side
+    public void readAndSendUserInput() {
+        //Create a new thread so the client can quit regardless of the server
         Thread clientThread = new Thread(new Runnable() {
             @Override
+
+            // It is run from runnable
             public void run() {
                 try {
+
                     //While the game is running read player input from the keyboard
                     while (isGameRunning) {
+
                         Scanner sc = new Scanner(System.in);
                         String input = sc.nextLine();
 
@@ -86,14 +86,14 @@ public class Client {
                             outstream.println(input);
                         }
                     }
-                }
-                finally {
+                } finally {
                     terminate();
                 }
             }
         });
         clientThread.start();
     }
+
     //Method that terminates all IO + closing the socket
     private void terminate() {
         try {

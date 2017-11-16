@@ -1,4 +1,4 @@
-package server;
+package server.net;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class ClientCommunication {
         this.out = out;
         this.in = in;
     }
-    // A method that prints to the client
+    // A method that prints to the client a char array
     public void printToClient(char[] charArray) {
         for (int i = 0; i < charArray.length; i++) {
             out.print(charArray[i] + " ");

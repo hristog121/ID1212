@@ -1,6 +1,6 @@
 /* This class will take care of giving a word to the client. All the small methods will take care of different things */
 
-package server;
+package server.model;
 
 import java.io.*;
 
@@ -43,8 +43,10 @@ public class GameWord {
     //Checking if the word is guessed if the player input a letter by letter
     public boolean checkLetterGuessed(String clientGuess) {
         boolean found = false;
+
         //Check if the player input 'letter' is in the word
         for (int i = 0; i < wordArray.length; i++) {
+
             // Replace a dash with a guessed letter
             if (clientGuess.charAt(0) == wordArray[i]) {
                 newMasked[i] = clientGuess.charAt(0);

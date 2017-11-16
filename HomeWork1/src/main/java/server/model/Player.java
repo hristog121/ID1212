@@ -1,4 +1,7 @@
-package server;
+package server.model;
+
+import server.net.ClientInput;
+import server.net.ClientCommunication;
 
 import java.io.IOException;
 
@@ -12,7 +15,7 @@ public class Player {
         this.connectionWithClient = connectionWithClient;
     }
 
-    public void start() throws IOException {
+    public void start() throws IOException, InterruptedException {
         while (true) {
             Game hangman = new Game(connectionWithClient);
             Game.GameResult result = hangman.start();
@@ -49,4 +52,7 @@ public class Player {
     private void promptForAnotherGame() {
         connectionWithClient.printToClient("Do you want to play again? Press '1' - Play, Press '!' - Quit");
     }
+   /* private void promptStart(){
+        connectionWithClient.printToClient("To start the game please type 'start' ");
+    }*/
 }
