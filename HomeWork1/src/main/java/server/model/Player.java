@@ -1,7 +1,7 @@
 package server.model;
 
-import server.net.ClientInput;
 import server.net.ClientCommunication;
+import server.net.ClientInput;
 
 import java.io.IOException;
 
@@ -29,9 +29,9 @@ public class Player {
                 case STOPPED:
                     return;
             }
-            //Prints the current score
+            //Prints the current score. The score can be negative as well
             printScore();
-            //Ask the player if he wants to play another game
+            //Ask the player if he wants to play another game or quit
             promptForAnotherGame();
 
             ClientInput clientInput = connectionWithClient.readClientInput();
@@ -44,15 +44,14 @@ public class Player {
             }
         }
     }
+
     //Method that prints the current score
     private void printScore() {
         connectionWithClient.printToClient("SCORE: " + score);
     }
+
     //Method for prompting and asking the player if he wants to play another game
     private void promptForAnotherGame() {
         connectionWithClient.printToClient("Do you want to play again? Press '1' - Play, Press '!' - Quit");
     }
-   /* private void promptStart(){
-        connectionWithClient.printToClient("To start the game please type 'start' ");
-    }*/
 }

@@ -34,7 +34,7 @@ public class Client {
     }
 
     // This method will print the welcome message to the users
-    //TODO This should move to other place may be
+
     public void printInstructions() {
         System.out.println("Welcome to the 97th Hangman games! I hope you can HANG out for a while!");
         System.out.println("To start the game please type 'start' ");

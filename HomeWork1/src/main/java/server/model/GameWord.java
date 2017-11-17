@@ -74,10 +74,13 @@ public class GameWord {
     //Extracting a random word from the text file.
     private String chooseWordFromFile() throws IOException {
         // Take the words from the word.txt file
-        try (FileInputStream getFile = new FileInputStream("/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork1/src/main/resources/words.txt");
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("words.txt").getFile());
+        try (FileInputStream getFile = new FileInputStream(file);
              BufferedReader getData = new BufferedReader(new InputStreamReader(new DataInputStream(getFile)))) {
 
             String word = "";
+
             //Get a random word from the txt file
             int random = (int) Math.round(Math.random() * 51528);
             for (int i = 0; i < random; i++) {

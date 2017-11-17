@@ -1,3 +1,6 @@
+/* */
+
+
 package client.startup;
 
 import client.net.Client;

@@ -1,19 +1,17 @@
 package server.net;
 
-
-import server.model.Player;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import server.model.Player;
 
-public class WorkerRun extends Thread {
+public class WorkerRun implements Runnable {
 
-    private Socket clientSocket;
+    private final Socket clientSocket;
 
-    public WorkerRun(Socket clientSocket) {
+    public WorkerRun(final Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
 
@@ -26,21 +24,21 @@ public class WorkerRun extends Thread {
                 //Wait until connected
             }
             //Declare a new variable of type ClientCommunication
-            ClientCommunication clientCommunication = new ClientCommunication(out, in);
+            final ClientCommunication clientCommunication = new ClientCommunication(out, in);
             //Makes a new player
-            Player player = new Player(clientCommunication);
-            if (clientCommunication.readClientInput().getInput().equals("start")){
+            final Player player = new Player(clientCommunication);
+            if (clientCommunication.readClientInput().getInput().equals("start")) {
                 player.start();
-            }else clientCommunication.printToClient("YOU HAVEN'T TYPED THE COMMAND CORRECTLY");
+            } else clientCommunication.printToClient("YOU HAVEN'T TYPED THE COMMAND CORRECTLY");
 
-        } catch (IOException ex) {
+        } catch (final IOException ex) {
             ex.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (final InterruptedException e) {
             e.printStackTrace();
         } finally {
             try {
                 clientSocket.close();
-            } catch (IOException e) {
+            } catch (final IOException e) {
                 e.printStackTrace();
             }
         }

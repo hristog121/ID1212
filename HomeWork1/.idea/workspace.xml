@@ -2,35 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e29408a1-e989-40f2-bf79-96612c552f0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/client/net/Client$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/client/net/Client.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/client/startup/StartGame.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/model/Game$GameResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/model/Game.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/model/GameWord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/model/Player$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/model/Player.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/net/ClientCommunication.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/net/ClientInput.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/net/Server.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/server/net/WorkerRun.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/client/startup/StartGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/server/model/Game.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/server/Game.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/client/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/server/Server.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/server/WorkerRun.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" afterPath="$PROJECT_DIR$/src/main/java/client/net/Client.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/ClientCommunication.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/ClientInput.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/ClientInput.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/GameWord.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/GameWord.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/Player.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/Server.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/WorkerRun.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HomeWork1.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/client/View/ReadWriteInput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/client/startup/StartGame.class" afterPath="$PROJECT_DIR$/target/classes/client/startup/StartGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/model/Game$GameResult.class" afterPath="$PROJECT_DIR$/target/classes/server/model/Game$GameResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/model/Game.class" afterPath="$PROJECT_DIR$/target/classes/server/model/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/model/GameWord.class" afterPath="$PROJECT_DIR$/target/classes/server/model/GameWord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/model/Player.class" afterPath="$PROJECT_DIR$/target/classes/server/model/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/net/ClientCommunication.class" afterPath="$PROJECT_DIR$/target/classes/server/net/ClientCommunication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/net/Server.class" afterPath="$PROJECT_DIR$/target/classes/server/net/Server.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/net/WorkerRun.class" afterPath="$PROJECT_DIR$/target/classes/server/net/WorkerRun.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/words.txt" afterPath="$PROJECT_DIR$/src/main/resources/words.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/words.txt" afterPath="$PROJECT_DIR$/target/classes/words.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/net/Client.java" afterPath="$PROJECT_DIR$/src/main/java/client/net/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/startup/StartGame.java" afterPath="$PROJECT_DIR$/src/main/java/client/startup/StartGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/model/Game.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/model/GameWord.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/GameWord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/model/Player.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/net/Server.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java" afterPath="$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,45 +52,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/net/Server.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/net/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameWord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/model/GameWord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientCommunication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java">
+      <file leaf-file-name="StartGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/StartGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="360">
+              <caret line="56" column="89" lean-forward="false" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkerRun.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java">
+      <file leaf-file-name="GameWord.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/model/GameWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="33" column="92" lean-forward="false" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
+            <state relative-caret-position="170">
+              <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -121,8 +97,8 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state relative-caret-position="180">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,14 +172,17 @@
         <option value="$PROJECT_DIR$/src/main/java/server/WorkerRun.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/StartGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/startup/StartGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/net/ClientInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/net/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/net/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/model/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/View/ReadWriteInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/startup/StartGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/View/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/net/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/model/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/model/GameWord.java" />
       </list>
     </option>
   </component>
@@ -213,7 +192,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -236,7 +215,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,15 +255,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HomeWork1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,9 +279,7 @@
               <item name="HomeWork1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework1" type="b2602c69:ProjectViewProjectNode" />
@@ -324,6 +291,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -338,19 +306,22 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="server" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Client.net" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="client" />
       <recent name="server" />
       <recent name="Client.net" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="server" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -589,12 +560,13 @@
       <workItem from="1510267025353" duration="520000" />
       <workItem from="1510400271802" duration="70931000" />
       <workItem from="1510840098046" duration="5588000" />
-      <workItem from="1510846730668" duration="3475000" />
+      <workItem from="1510846730668" duration="17239000" />
+      <workItem from="1510955710714" duration="901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224013000" />
+    <option name="totallyTimeSpent" value="238678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,8 +578,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
@@ -615,21 +586,21 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655527" sideWeight="0.5286123" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2840617" sideWeight="0.5314735" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5861183" sideWeight="0.47138768" order="2" side_tool="false" content_ui="tabs" x="1" y="325" width="1440" height="148" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2840617" sideWeight="0.46852645" order="2" side_tool="false" content_ui="tabs" x="1" y="325" width="1440" height="148" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24336283" sideWeight="0.80680275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24320458" sideWeight="0.80680275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4395887" sideWeight="0.70314735" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3393086" sideWeight="0.19319728" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4395887" sideWeight="0.70314735" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -704,53 +675,27 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java</url>
-          <line>22</line>
-          <properties class="server.net.ClientCommunication" method="printToClient">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="77" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/model/Game.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/server/net/Server.java</url>
-          <line>22</line>
+          <line>19</line>
           <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/server/model/Game.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="94" />
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="95" />
+      <option name="time" value="97" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/HttpServer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/client/net/ServerConnection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/server/controller/Controller.java" />
@@ -816,18 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639560">
-          <caret line="8850" column="2" lean-forward="false" selection-start-line="8850" selection-start-column="2" selection-end-line="8850" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="833" column="68" lean-forward="false" selection-start-line="833" selection-start-column="68" selection-end-line="833" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="736" column="16" lean-forward="false" selection-start-line="736" selection-start-column="16" selection-end-line="736" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="1586" column="19" lean-forward="false" selection-start-line="1586" selection-start-column="19" selection-end-line="1586" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,71 +809,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/net.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/net/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="78" column="53" lean-forward="false" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/StartGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#240#241#0" expanded="false" />
-            <element signature="e#268#269#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/GameWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/net/WorkerRun.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -947,13 +817,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Game.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/net/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="99">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11292" column="4" lean-forward="false" selection-start-line="11292" selection-start-column="0" selection-end-line="11292" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/net/ClientCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/View/ClientThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/net/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/StartGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="56" column="89" lean-forward="false" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/View/ReadWriteInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/GameWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
