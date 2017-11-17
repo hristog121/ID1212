@@ -2,7 +2,6 @@ package server.model;
 
 import client.net.Client;
 import server.net.ClientCommunication;
-import server.net.ClientInput;
 
 import java.io.IOException;
 

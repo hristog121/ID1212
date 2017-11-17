@@ -1,4 +1,4 @@
-package server.net;
+package server.model;
 /*  */
 public class ClientInput {
     private String input;
