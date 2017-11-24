@@ -15,6 +15,7 @@ public class Server {
     private ServerSocketChannel serverSocketChannel;
     private ServerSocket serverSocket;
     private Selector selector;
+    private volatile boolean startMonitorSending = false;
 
     public static void main(final String[] args) throws IOException {
         final Server server = new Server();
@@ -51,8 +52,21 @@ public class Server {
         }
     }
 
+    public void getReadyToSend() {
+        startMonitorSending = true;
+        selector.wakeup();
+    }
+
     private void processConnection() throws IOException {
         while (true) {
+            if (startMonitorSending) {
+                for (final SelectionKey key : selector.keys()) {
+                    if (key.channel() instanceof SocketChannel && key.isValid()) {
+                        key.interestOps(SelectionKey.OP_WRITE);
+                    }
+                }
+                startMonitorSending = false;
+            }
             selector.select();
             final Iterator selKeysIterator = selector.selectedKeys().iterator();
             while (selKeysIterator.hasNext()) {
@@ -73,7 +87,7 @@ public class Server {
     private void acceptConnection() throws IOException {
         final SocketChannel socketChannel = serverSocketChannel.accept();
         socketChannel.configureBlocking(false);
-        socketChannel.register(selector, SelectionKey.OP_WRITE, new ClientConnectionHandler(selector, socketChannel));
+        socketChannel.register(selector, SelectionKey.OP_WRITE, new ClientConnectionHandler(this, selector, socketChannel));
     }
 
     private void receiveFromClient(final SelectionKey selKey) throws IOException {

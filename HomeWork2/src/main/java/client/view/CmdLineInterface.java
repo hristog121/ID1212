@@ -8,7 +8,7 @@ import common.OutputMessageHandler;
 import java.util.Scanner;
 
 public class CmdLineInterface {
-    private final ServerConnection serverConnection;
+    private final ServerConnection server;
     private final InputMessageHandler inputMessageHandler;
     private final OutputMessageHandler outputMessageHandler;
 
@@ -17,7 +17,7 @@ public class CmdLineInterface {
         final InputMessageHandler inputMessageHandler,
         final OutputMessageHandler outputMessageHandler
     ) {
-        this.serverConnection = serverConnection;
+        this.server = serverConnection;
         this.inputMessageHandler = inputMessageHandler;
         this.outputMessageHandler = outputMessageHandler;
     }
@@ -64,7 +64,7 @@ public class CmdLineInterface {
             System.exit(1);
         } else {
             outputMessageHandler.appendOutputMessage(input);
-            serverConnection.getReadyToSend();
+            server.getReadyToSend();
         }
     }
 }

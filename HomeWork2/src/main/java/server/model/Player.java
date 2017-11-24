@@ -4,24 +4,25 @@ import common.Command;
 import common.InputMessageHandler;
 import common.OutputMessageHandler;
 import server.net.ClientConnectionHandler;
+import server.net.Server;
 
 public class Player implements Runnable {
     private int score;
     private Game hangman;
     private final InputMessageHandler inputMessageHandler;
     private final OutputMessageHandler outputMessageHandler;
-    private final ClientConnectionHandler clientConnectionHandler;
+    private final Server server;
 
     //Constructor for player
     public Player(
-        final ClientConnectionHandler clientConnectionHandler,
+        final Server server,
         final InputMessageHandler inputMessageHandler,
         final OutputMessageHandler outputMessageHandler
     ) {
         this.score = 0;
         this.inputMessageHandler = inputMessageHandler;
         this.outputMessageHandler = outputMessageHandler;
-        this.clientConnectionHandler = clientConnectionHandler;
+        this.server = server;
     }
 
     @Override
@@ -40,7 +41,7 @@ public class Player implements Runnable {
                     processClientGuess(clientInput);
                     break;
             }
-            clientConnectionHandler.startListening();
+            server.getReadyToSend();
         }
     }
 

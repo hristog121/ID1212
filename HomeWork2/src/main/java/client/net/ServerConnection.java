@@ -14,6 +14,7 @@ public class ServerConnection {
     private SocketChannel socketChannel;
     private Selector selector;
     private ServerConnectionHandler serverConnectionHandler;
+    private volatile boolean startMonitorSending = false;
 
     public void start(final InputMessageHandler inputMessageHandler, final OutputMessageHandler outputMessageHandler) {
         System.out.println("Server starts to listen on port " + PORT);
@@ -47,12 +48,16 @@ public class ServerConnection {
     }
 
     public void getReadyToSend() {
-        socketChannel.keyFor(selector).interestOps(SelectionKey.OP_WRITE);
+        startMonitorSending = true;
         selector.wakeup();
     }
 
     private void processServerConnection() throws IOException {
         while (true) {
+            if (startMonitorSending) {
+                socketChannel.keyFor(selector).interestOps(SelectionKey.OP_WRITE);
+                startMonitorSending = false;
+            }
             selector.select();
             final Iterator keysIterator = selector.selectedKeys().iterator();
             while (keysIterator.hasNext()) {

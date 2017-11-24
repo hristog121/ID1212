@@ -21,7 +21,7 @@ public class ClientConnectionHandler {
     private final Player player;
     private final Selector selector;
 
-    public ClientConnectionHandler(final Selector selector, final SocketChannel socketChannel) throws IOException {
+    public ClientConnectionHandler(final Server server, final Selector selector, final SocketChannel socketChannel) throws IOException {
         final Socket socket = socketChannel.socket();
         System.out.println("Connection on socket " + socket + "...");
         this.socketChannel = socketChannel;
@@ -29,7 +29,7 @@ public class ClientConnectionHandler {
         this.buffer = ByteBuffer.allocate(BUFFER_SIZE);
         this.inputMessageHandler = new InputMessageHandler();
         this.outputMessageHandler = new OutputMessageHandler();
-        this.player = new Player(this, inputMessageHandler, outputMessageHandler);
+        this.player = new Player(server, inputMessageHandler, outputMessageHandler);
         this.player.start();
     }
 
@@ -59,10 +59,5 @@ public class ClientConnectionHandler {
                 throw new IOException("Could not send message");
             }
         }
-    }
-
-    public void startListening() {
-        socketChannel.keyFor(selector).interestOps(SelectionKey.OP_WRITE);
-        selector.wakeup();
     }
 }
