@@ -11,7 +11,7 @@ import java.util.Iterator;
 
 public class Server {
 
-    private final int port = 1112;
+    private static final int PORT = 1112;
     private ServerSocketChannel serverSocketChannel;
     private ServerSocket serverSocket;
     private Selector selector;
@@ -22,12 +22,12 @@ public class Server {
     }
 
     public void start() {
-        System.out.println("Server starts to listen on port 1112");
+        System.out.println("Server starts to listen on port " + PORT);
         try {
             serverSocketChannel = ServerSocketChannel.open();// Create
             serverSocketChannel.configureBlocking(false);
             serverSocket = serverSocketChannel.socket();
-            serverSocketChannel.bind(new InetSocketAddress(port));
+            serverSocketChannel.bind(new InetSocketAddress(PORT));
             selector = Selector.open();
             serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
             processConnection();

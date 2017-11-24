@@ -52,20 +52,23 @@ public class Player implements Runnable {
     }
 
     private void processClientGuess(final String clientGuess) {
-        final Game.GameResult result = hangman.processClientInput(clientGuess);
-        switch (result) {
-            case WIN:
-                score++;
-                printScoreAndPromptForAnotherGame();
-                break;
-            case LOOSE:
-                score--;
-                printScoreAndPromptForAnotherGame();
-                break;
+        if (hangman != null) {
+            final Game.GameResult result = hangman.processClientInput(clientGuess);
+            switch (result) {
+                case WIN:
+                    score++;
+                    printScoreAndPromptForAnotherGame();
+                    break;
+                case LOOSE:
+                    score--;
+                    printScoreAndPromptForAnotherGame();
+                    break;
+            }
         }
     }
 
     private void printScoreAndPromptForAnotherGame() {
+        hangman = null;
         outputMessageHandler.appendOutputMessage("SCORE: " + score);
         outputMessageHandler.appendOutputMessage("Do you want to play again? Press '1' - Play, Press '!' - Quit");
     }

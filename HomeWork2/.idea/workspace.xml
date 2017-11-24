@@ -18,7 +18,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="20" />
-              <folding />
+              <folding>
+                <marker date="1511561500000" expanded="true" signature="996:1763" ph="{...}" />
+                <marker date="1511561500000" expanded="true" signature="1821:2508" ph="{...}" />
+                <marker date="1511561500000" expanded="true" signature="2565:2813" ph="{...}" />
+                <marker date="1511561500000" expanded="true" signature="2896:3184" ph="{...}" />
+                <marker date="1511561500000" expanded="true" signature="3263:3600" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,21 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutputMessageHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OutputMessageHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/common/OutputMessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,9 +62,11 @@
       <file leaf-file-name="ServerConnectionHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/net/ServerConnectionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="-4">
+              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <marker date="1511564825000" expanded="true" signature="1785:1801" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +76,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
               <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1511558429000" expanded="true" signature="2008:2414" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +90,8 @@
               <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1511553407000" expanded="true" signature="2924:2947" ph="{...}" />
-                <marker date="1511553407000" expanded="true" signature="2941:2947" ph="{...}" />
+                <marker date="1511565151000" expanded="true" signature="2919:2942" ph="{...}" />
+                <marker date="1511565151000" expanded="true" signature="2936:2942" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -103,7 +103,7 @@
             <state relative-caret-position="435">
               <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
               <folding>
-                <marker date="1511558228000" expanded="true" signature="2526:2598" ph="{...}" />
+                <marker date="1511565440000" expanded="true" signature="2635:2707" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -151,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/main/java/server/net/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/net/ClientConnectionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/startup/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/OutputMessageHandler.java" />
       </list>
     </option>
   </component>
@@ -221,15 +222,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="net" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HomeWork2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HomeWork2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeWork2" type="b2602c69:ProjectViewProjectNode" />
@@ -517,12 +509,12 @@
       <workItem from="1511476340449" duration="2369000" />
       <workItem from="1511478836407" duration="6643000" />
       <workItem from="1511521869652" duration="11623000" />
-      <workItem from="1511558468315" duration="2573000" />
+      <workItem from="1511558468315" duration="3132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57890000" />
+    <option name="totallyTimeSpent" value="58449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -680,7 +672,7 @@
         <state relative-caret-position="435">
           <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
           <folding>
-            <marker date="1511558228000" expanded="true" signature="2526:2598" ph="{...}" />
+            <marker date="1511565440000" expanded="true" signature="2635:2707" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -691,8 +683,8 @@
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1511553407000" expanded="true" signature="2924:2947" ph="{...}" />
-            <marker date="1511553407000" expanded="true" signature="2941:2947" ph="{...}" />
+            <marker date="1511565151000" expanded="true" signature="2919:2942" ph="{...}" />
+            <marker date="1511565151000" expanded="true" signature="2936:2942" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -723,9 +715,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/net/ServerConnectionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="-4">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <marker date="1511564825000" expanded="true" signature="1785:1801" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,19 +731,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/OutputMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/net/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="20" />
-          <folding />
+          <folding>
+            <marker date="1511561500000" expanded="true" signature="996:1763" ph="{...}" />
+            <marker date="1511561500000" expanded="true" signature="1821:2508" ph="{...}" />
+            <marker date="1511561500000" expanded="true" signature="2565:2813" ph="{...}" />
+            <marker date="1511561500000" expanded="true" signature="2896:3184" ph="{...}" />
+            <marker date="1511561500000" expanded="true" signature="3263:3600" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -757,7 +749,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1511558429000" expanded="true" signature="2008:2414" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +759,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#289#290#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,6 +770,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/OutputMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

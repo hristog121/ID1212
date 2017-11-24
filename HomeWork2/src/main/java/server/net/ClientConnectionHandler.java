@@ -47,7 +47,6 @@ public class ClientConnectionHandler {
 
         inputMessageHandler.appendInputMessage(new String(buffer.array(), 0, numBytes));
         ForkJoinPool.commonPool().execute(player);
-
     }
 
     //Sends to client

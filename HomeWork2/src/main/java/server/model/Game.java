@@ -65,7 +65,7 @@ public class Game {
 
     //Prints the masked word - to player and asks him to guess a letter or the whole word
     private void printMaskedWord() {
-        outputMessageHandler.appendOutputMessage(hangmanWord.getNewMasked() + "");
+        outputMessageHandler.appendOutputMessage(hangmanWord.getNewMasked());
         outputMessageHandler.appendOutputMessage("Please guess a letter or the whole word!");
     }
 

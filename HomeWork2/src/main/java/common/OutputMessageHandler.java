@@ -21,7 +21,7 @@ public class OutputMessageHandler {
 
     public synchronized void appendOutputMessage(final String output) {
         final StringBuilder sb = new StringBuilder(output);
-        sb.append("\n").append(MESSAGE_SEPARATOR);
+        sb.append(MESSAGE_SEPARATOR);
         outputQueue.add(sb.toString());
     }
 }
