@@ -23,20 +23,19 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
 
     //Method for registering a new user and adding it to the DB -
     @Override
-    public synchronized String registerNewUser(String userName, String passWord) throws FileCatalogException {
-        String accountExists = "Account " + userName + " already exists try a new username";
-        String accountCreated = "Account with " + userName + " was created successfully";
+    public Result registerNewUser(String userName, String passWord) {
         try {
             if (fileDB.findAccountByName(userName) != null) {
-                throw new FileCatalogException("Another account with the same username exist " + userName);
+                return Result.error("An account with username " + userName + " already exists");
             }
 
             fileDB.createAccount(new Account(userName, passWord));
+
+            return Result.success("Account with username " + userName + " was created successfully");
         } catch (FileCatalogDBException e) {
             e.printStackTrace();
-            throw new FileCatalogException("Can not create account: ", e);
+            return Result.error("An error occurred while creating account.");
         }
-        return accountCreated;
     }
 
     //Delete already registered user from the DB
@@ -52,25 +51,28 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
             e.printStackTrace();
             throw new FileCatalogException("Can't delete account ", e);
         }
-
     }
 
     //Check if user name and password are a match + start a new session
     @Override
-    public String logIn(String userName, String passWord) throws FileCatalogException {
+    public LoginResult logIn(String userName, String passWord) throws FileCatalogException {
         try {
             Account account = fileDB.findAccountByName(userName);
-            fileDB.deleteSessionForUser(account);
-            if (account.getPassWord().equals(passWord)) {
-                String sessionID = UUID.randomUUID().toString();
-                fileDB.createSession(sessionID, account);
-                return sessionID;
+            if (account != null) {
+                fileDB.deleteSessionForUser(account);
+                if (account.getPassWord().equals(passWord)) {
+                    String sessionID = UUID.randomUUID().toString();
+                    fileDB.createSession(sessionID, account);
+                    return LoginResult.success(sessionID, "You have successfully logged in!");
+                } else {
+                    return LoginResult.failure("Wrong user name or password");
+                }
             } else {
-                throw new FileCatalogException("WRONG PASSWORD OR USERNAME!!!!!!!!");
+                return LoginResult.failure("Account does not exist");
             }
         } catch (FileCatalogDBException e) {
             e.printStackTrace();
-            throw new FileCatalogException("Can't find the account ", e);
+            return LoginResult.failure("An error has occurred while finding account");
         }
     }
 

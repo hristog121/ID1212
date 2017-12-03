@@ -7,13 +7,13 @@ import java.util.List;
 public interface FileCatalog  extends Remote {
 
     //Register new user UUID - Session
-    String registerNewUser (String userName, String passWord) throws FileCatalogException, RemoteException;
+    Result registerNewUser (String userName, String passWord) throws FileCatalogException, RemoteException;
 
     //Unregister a user
     void unRegisterUser(String sessionID) throws FileCatalogException, RemoteException;
 
     //Log in for existing user
-    String logIn(String userName, String passWord) throws FileCatalogException,RemoteException;
+    LoginResult logIn(String userName, String passWord) throws FileCatalogException,RemoteException;
 
     //Log out the user
     void logOut(String sessionID)throws FileCatalogException, RemoteException;
