@@ -8,7 +8,7 @@ public class FileDTO implements Serializable {
     private AccessPermissions accessPermissions;
     private OperationPermissions operationPermissions;
 
-    public FileDTO(String name, long size, AccessPermissions accessPermissions, OperationPermissions operationPermissions, boolean norifyable) {
+    public FileDTO(String name, long size, AccessPermissions accessPermissions, OperationPermissions operationPermissions) {
         this.name = name;
         this.size = size;
         this.accessPermissions = accessPermissions;

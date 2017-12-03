@@ -18,7 +18,7 @@ public enum Commands {
 
     LOGOUT,
 
-    LISTFILES,
+    LIST,
 
     UPLOAD,
 
@@ -26,7 +26,7 @@ public enum Commands {
 
     HELP,
 
-    DELETE
+    DELETE,
 
-
+    NOTIFY
 }

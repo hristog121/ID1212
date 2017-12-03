@@ -115,9 +115,8 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
                 return "File does not exist";
             }
 
-            notifyOwner(account, fd, FileOperationType.READ);
-
             if (canAccessFile(account, fd)) {
+                notifyOwner(account, fd, FileOperationType.READ);
                 return formatFileData(fd);
             } else {
                 return "This file has private access";

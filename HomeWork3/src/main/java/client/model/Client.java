@@ -5,7 +5,7 @@ import common.ClientCatalog;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class Client extends UnicastRemoteObject implements ClientCatalog {
+public class Client implements ClientCatalog {
     private String sessionID;
 
     public Client() throws RemoteException {
@@ -22,6 +22,8 @@ public class Client extends UnicastRemoteObject implements ClientCatalog {
 
     @Override
     public void receiveMessage(String message) {
+        System.out.println();
+        System.out.println("Incoming notification...");
         System.out.println(message);
     }
 }

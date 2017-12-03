@@ -76,49 +76,49 @@
       <file leaf-file-name="FileSystemDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/integrations/FileSystemDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+            <state relative-caret-position="-361">
+              <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1512317941590" expanded="true" signature="2254:2271" ph="INSERT INTO HM3.ACCOUNTS... " />
-                <marker date="1512317941590" expanded="true" signature="2254:2314" ph="INSERT INTO HM3.ACCOUNTS... " />
-                <marker date="1512317941590" expanded="true" signature="2372:2393" ph="INSERT INTO HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="2372:2405" ph="INSERT INTO HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="2372:2475" ph="INSERT INTO HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="2537:2575" ph="SELECT * FRO... files" />
-                <marker date="1512317941590" expanded="true" signature="2637:2653" ph="INSERT INTO HM3.... " />
-                <marker date="1512317941590" expanded="true" signature="2637:2660" ph="INSERT INTO HM3.... " />
-                <marker date="1512317941590" expanded="true" signature="2637:2678" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2637:2692" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2757:2783" ph="SELECT * FRO... accounts" />
-                <marker date="1512317941590" expanded="true" signature="2757:2803" ph="SELECT * FRO... accounts" />
-                <marker date="1512317941590" expanded="true" signature="2865:2902" ph="DELETE FROM " />
-                <marker date="1512317941590" expanded="true" signature="2972:2999" ph="SELECT FROM HM3.... " />
-                <marker date="1512317941590" expanded="true" signature="2972:3030" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2972:3037" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2972:3040" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2972:3050" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="2972:3086" ph="SELECT HM3.a... session" />
-                <marker date="1512317941590" expanded="true" signature="3147:3170" ph="DELETE FROM HM3.... " />
-                <marker date="1512317941590" expanded="true" signature="3147:3191" ph="DELETE FROM HM3.\&quot;session\&quot;... " />
-                <marker date="1512317941590" expanded="true" signature="3259:3297" ph="DELETE FROM HM3.session... " />
-                <marker date="1512317941590" expanded="true" signature="3357:3422" ph="SELECT * FRO... files" />
-                <marker date="1512317941590" expanded="true" signature="3480:3514" ph="DELETE FROM HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="3572:3592" ph="UPDATE HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="3572:3597" ph="UPDATE HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="3572:3643" ph="UPDATE HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="3572:3645" ph="UPDATE HM3.files... " />
-                <marker date="1512317941590" expanded="true" signature="3572:3658" ph="UPDATE HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="2254:2271" ph="INSERT INTO HM3.ACCOUNTS... " />
+                <marker date="1512319446414" expanded="true" signature="2254:2314" ph="INSERT INTO HM3.ACCOUNTS... " />
+                <marker date="1512319446414" expanded="true" signature="2372:2393" ph="INSERT INTO HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="2372:2405" ph="INSERT INTO HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="2372:2475" ph="INSERT INTO HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="2537:2575" ph="SELECT * FRO... files" />
+                <marker date="1512319446414" expanded="true" signature="2637:2653" ph="INSERT INTO HM3.... " />
+                <marker date="1512319446414" expanded="true" signature="2637:2660" ph="INSERT INTO HM3.... " />
+                <marker date="1512319446414" expanded="true" signature="2637:2678" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2637:2692" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2757:2783" ph="SELECT * FRO... accounts" />
+                <marker date="1512319446414" expanded="true" signature="2757:2803" ph="SELECT * FRO... accounts" />
+                <marker date="1512319446414" expanded="true" signature="2865:2902" ph="DELETE FROM " />
+                <marker date="1512319446414" expanded="true" signature="2972:2999" ph="SELECT FROM HM3.... " />
+                <marker date="1512319446414" expanded="true" signature="2972:3030" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2972:3037" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2972:3040" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2972:3050" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="2972:3086" ph="SELECT HM3.a... session" />
+                <marker date="1512319446414" expanded="true" signature="3147:3170" ph="DELETE FROM HM3.... " />
+                <marker date="1512319446414" expanded="true" signature="3147:3191" ph="DELETE FROM HM3.\&quot;session\&quot;... " />
+                <marker date="1512319446414" expanded="true" signature="3259:3297" ph="DELETE FROM HM3.session... " />
+                <marker date="1512319446414" expanded="true" signature="3357:3422" ph="SELECT * FRO... files" />
+                <marker date="1512319446414" expanded="true" signature="3480:3514" ph="DELETE FROM HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="3572:3592" ph="UPDATE HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="3572:3597" ph="UPDATE HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="3572:3643" ph="UPDATE HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="3572:3645" ph="UPDATE HM3.files... " />
+                <marker date="1512319446414" expanded="true" signature="3572:3658" ph="UPDATE HM3.files... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileCatalog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/FileCatalog.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/model/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -127,35 +127,10 @@
       <file leaf-file-name="ClientStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/ClientStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="271">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientCatalog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/ClientCatalog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client/model/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding>
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,8 +139,8 @@
       <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/view/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="97" column="81" lean-forward="true" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
+            <state relative-caret-position="-2001">
+              <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,31 +148,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Commands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/view/Commands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2937">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileDTO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/FileDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="141" lean-forward="false" selection-start-line="10" selection-start-column="141" selection-end-line="10" selection-end-column="141" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileOperationType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/controller/FileOperationType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="138">
+              <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,11 +171,31 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="240">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/FileDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="121" lean-forward="false" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessPermissions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/AccessPermissions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -221,8 +206,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -272,15 +257,16 @@
         <option value="$PROJECT_DIR$/src/main/java/common/AccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/startup/ClientStart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/view/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/ClientCatalog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/model/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/view/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/controller/FileAccessType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/FileCatalog.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/integrations/FileSystemDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/FileCatalog.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/FileDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/view/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/controller/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/view/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/model/Client.java" />
       </list>
     </option>
   </component>
@@ -324,6 +310,11 @@
             <path>
               <item name="HomeWork3" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeWork3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWork3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork3" type="462c0819:PsiDirectoryNode" />
+              <item name="FileSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeWork3" type="b2602c69:ProjectViewProjectNode" />
@@ -598,16 +589,15 @@
       <workItem from="1512052062124" duration="5550000" />
       <workItem from="1512130379515" duration="15113000" />
       <workItem from="1512164505034" duration="10292000" />
-      <workItem from="1512217186110" duration="41189000" />
+      <workItem from="1512217186110" duration="43056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113754000" />
+    <option name="totallyTimeSpent" value="115621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -624,13 +614,13 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21244635" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29756796" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28132993" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37723786" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.4923664" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24926254" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.50763357" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43222508" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48337597" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -728,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/a54ac9d1/08ddae04-ba0a-4ae4-bd47-92d7142e17a4/STUDENTS.Files">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/a54ac9d1/08ddae04-ba0a-4ae4-bd47-92d7142e17a4/STUDENTS.Username">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -810,7 +793,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Credentials.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/FileSystemClient.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/FileSystemServer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java" />
     <entry file="uml://DATABASE/08ddae04-ba0a-4ae4-bd47-92d7142e17a4.TABLE:HM3.ACCOUNTS">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -937,14 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/AccessPermissions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/AccountDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -992,24 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/view/Commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/a54ac9d1/08ddae04-ba0a-4ae4-bd47-92d7142e17a4/HM3.session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1024,41 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/ClientStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/ClientCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/view/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="97" column="81" lean-forward="true" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1073,45 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/integrations/FileSystemDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1512317941590" expanded="true" signature="2254:2271" ph="INSERT INTO HM3.ACCOUNTS... " />
-            <marker date="1512317941590" expanded="true" signature="2254:2314" ph="INSERT INTO HM3.ACCOUNTS... " />
-            <marker date="1512317941590" expanded="true" signature="2372:2393" ph="INSERT INTO HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="2372:2405" ph="INSERT INTO HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="2372:2475" ph="INSERT INTO HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="2537:2575" ph="SELECT * FRO... files" />
-            <marker date="1512317941590" expanded="true" signature="2637:2653" ph="INSERT INTO HM3.... " />
-            <marker date="1512317941590" expanded="true" signature="2637:2660" ph="INSERT INTO HM3.... " />
-            <marker date="1512317941590" expanded="true" signature="2637:2678" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2637:2692" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2757:2783" ph="SELECT * FRO... accounts" />
-            <marker date="1512317941590" expanded="true" signature="2757:2803" ph="SELECT * FRO... accounts" />
-            <marker date="1512317941590" expanded="true" signature="2865:2902" ph="DELETE FROM " />
-            <marker date="1512317941590" expanded="true" signature="2972:2999" ph="SELECT FROM HM3.... " />
-            <marker date="1512317941590" expanded="true" signature="2972:3030" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2972:3037" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2972:3040" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2972:3050" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="2972:3086" ph="SELECT HM3.a... session" />
-            <marker date="1512317941590" expanded="true" signature="3147:3170" ph="DELETE FROM HM3.... " />
-            <marker date="1512317941590" expanded="true" signature="3147:3191" ph="DELETE FROM HM3.\&quot;session\&quot;... " />
-            <marker date="1512317941590" expanded="true" signature="3259:3297" ph="DELETE FROM HM3.session... " />
-            <marker date="1512317941590" expanded="true" signature="3357:3422" ph="SELECT * FRO... files" />
-            <marker date="1512317941590" expanded="true" signature="3480:3514" ph="DELETE FROM HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="3572:3592" ph="UPDATE HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="3572:3597" ph="UPDATE HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="3572:3643" ph="UPDATE HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="3572:3645" ph="UPDATE HM3.files... " />
-            <marker date="1512317941590" expanded="true" signature="3572:3658" ph="UPDATE HM3.files... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/FileCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1120,18 +1006,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/controller/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/AccessPermissions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2937">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/integrations/FileSystemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1512319446414" expanded="true" signature="2254:2271" ph="INSERT INTO HM3.ACCOUNTS... " />
+            <marker date="1512319446414" expanded="true" signature="2254:2314" ph="INSERT INTO HM3.ACCOUNTS... " />
+            <marker date="1512319446414" expanded="true" signature="2372:2393" ph="INSERT INTO HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="2372:2405" ph="INSERT INTO HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="2372:2475" ph="INSERT INTO HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="2537:2575" ph="SELECT * FRO... files" />
+            <marker date="1512319446414" expanded="true" signature="2637:2653" ph="INSERT INTO HM3.... " />
+            <marker date="1512319446414" expanded="true" signature="2637:2660" ph="INSERT INTO HM3.... " />
+            <marker date="1512319446414" expanded="true" signature="2637:2678" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2637:2692" ph="INSERT INTO HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2757:2783" ph="SELECT * FRO... accounts" />
+            <marker date="1512319446414" expanded="true" signature="2757:2803" ph="SELECT * FRO... accounts" />
+            <marker date="1512319446414" expanded="true" signature="2865:2902" ph="DELETE FROM " />
+            <marker date="1512319446414" expanded="true" signature="2972:2999" ph="SELECT FROM HM3.... " />
+            <marker date="1512319446414" expanded="true" signature="2972:3030" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2972:3037" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2972:3040" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2972:3050" ph="SELECT FROM HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="2972:3086" ph="SELECT HM3.a... session" />
+            <marker date="1512319446414" expanded="true" signature="3147:3170" ph="DELETE FROM HM3.... " />
+            <marker date="1512319446414" expanded="true" signature="3147:3191" ph="DELETE FROM HM3.\&quot;session\&quot;... " />
+            <marker date="1512319446414" expanded="true" signature="3259:3297" ph="DELETE FROM HM3.session... " />
+            <marker date="1512319446414" expanded="true" signature="3357:3422" ph="SELECT * FRO... files" />
+            <marker date="1512319446414" expanded="true" signature="3480:3514" ph="DELETE FROM HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="3572:3592" ph="UPDATE HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="3572:3597" ph="UPDATE HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="3572:3643" ph="UPDATE HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="3572:3645" ph="UPDATE HM3.files... " />
+            <marker date="1512319446414" expanded="true" signature="3572:3658" ph="UPDATE HM3.files... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/FileDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="141" lean-forward="false" selection-start-line="10" selection-start-column="141" selection-end-line="10" selection-end-column="141" />
+          <caret line="10" column="121" lean-forward="false" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/controller/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2670">
+          <caret line="178" column="5" lean-forward="false" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/startup/ClientStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/view/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2001">
+          <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/view/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>

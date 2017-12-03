@@ -16,7 +16,7 @@ public class Server {
             Server server = new Server();
             FileSystemDAO fileSystemDAO = new FileSystemDAO();
             server.startRegistry();
-            Naming.rebind("FILE_SERVER", new Controller(fileSystemDAO)); //Controller is the stub
+            Naming.rebind("FILE_SERVER", new Controller(fileSystemDAO)); //CommandHandler is the stub
             System.out.println("Server have started ...");
         } catch (RemoteException  | MalformedURLException e) {
             System.out.print(e);

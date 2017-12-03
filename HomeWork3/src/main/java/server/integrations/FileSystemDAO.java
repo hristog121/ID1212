@@ -125,7 +125,6 @@ public class FileSystemDAO {
         } catch (SQLException e) {
             throw new FileCatalogDBException("Can not create the session ", e);
         }
-
     }
 
     //Stop the session after the user log out

@@ -29,10 +29,12 @@ public class UserInterface {
         System.out.println("2. To remove your account type 'unregister' ");
         System.out.println("3. To login type 'login' ");
         System.out.println("4. To logout type 'logout' ");
-        System.out.println("5. To list all files type 'listfiles' ");
+        System.out.println("5. To list all files type 'list' ");
         System.out.println("6. To upload file type 'upload' ");
         System.out.println("7. To delete file type 'delete' ");
-        System.out.println("8. To see this menu again type 'help' ");
+        System.out.println("8. To update file type 'update' ");
+        System.out.println("9. To register for notification when some of your public files is accessed type 'notify' ");
+        System.out.println("10. To see this menu again type 'help' ");
     }
 
     void run() throws FileCatalogException {
@@ -55,7 +57,7 @@ public class UserInterface {
                     case UNREGISTER:
                         unregister();
                         break;
-                    case LISTFILES:
+                    case LIST:
                         listFiles();
                         break;
                     case UPLOAD:
@@ -70,6 +72,9 @@ public class UserInterface {
                     case DELETE:
                         delete();
                         break;
+                    case NOTIFY:
+                        registerForNotification();
+                        break;
                 }
             } catch (RemoteException e) {
                 e.printStackTrace();
@@ -82,7 +87,7 @@ public class UserInterface {
             System.out.println("Please enter file name to download it: ");
             String fileName = sc.nextLine();
 
-            System.out.println(server.downloadFile(client.getSessionID(),fileName));
+            System.out.println(server.downloadFile(client.getSessionID(), fileName));
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (FileCatalogException e) {
@@ -95,7 +100,7 @@ public class UserInterface {
         try {
             System.out.println("Please enter file name to delete: ");
             String fileName = sc.nextLine();
-            System.out.println(server.deleteFile(client.getSessionID(),fileName));
+            System.out.println(server.deleteFile(client.getSessionID(), fileName));
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (FileCatalogException e) {
@@ -108,7 +113,7 @@ public class UserInterface {
             System.out.println("Please enter full file path: ");
             String filePath = sc.nextLine();
             File file = new File(filePath);
-            if(!file.exists() || file.isDirectory() ){
+            if (!file.exists() || file.isDirectory()) {
                 System.out.println("The file is not existing or it is dir ...");
                 return;
             }
@@ -120,10 +125,32 @@ public class UserInterface {
             OperationPermissions operationPermissions = readOperationPermission();
 
             server.uploadFile(client.getSessionID(), new FileDTO(file.getName(), file.length(), accessPermissions, operationPermissions));
-        } catch (IllegalArgumentException e) {
-            System.out.println(e);
-            if (e.getMessage().startsWith("java.lang.IllegalArgumentException: No enum constant common.AccessPermissions")) {
+        } catch (FileCatalogException e) {
+            if (e.getMessage().equals("User not logged in")) {
+                System.out.println("You are not logged in, please login.");
+            } else {
+                System.out.println("An error has occurred while uploading the file.");
             }
+        }
+    }
+
+    private void update() throws RemoteException {
+        try {
+            System.out.println("Please enter full file path: ");
+            String filePath = sc.nextLine();
+            File file = new File(filePath);
+            if (!file.exists() || file.isDirectory()) {
+                System.out.println("The file is not existing or it is dir ...");
+                return;
+            }
+
+            System.out.println("Please enter file assess permissions (public/private): ");
+            AccessPermissions accessPermissions = readAccessPermission();
+
+            System.out.println("Please enter file operation permissions (write/read): ");
+            OperationPermissions operationPermissions = readOperationPermission();
+
+            server.updateFile(client.getSessionID(), new FileDTO(file.getName(), file.length(), accessPermissions, operationPermissions));
         } catch (FileCatalogException e) {
             if (e.getMessage().equals("User not logged in")) {
                 System.out.println("You are not logged in, please login.");
@@ -176,6 +203,14 @@ public class UserInterface {
             client.setSessionID(sessionID);
         } catch (FileCatalogException e) {
             System.out.println("There was a problem logging in. Please check your user name and password!");
+        }
+    }
+
+    private void registerForNotification() throws RemoteException {
+        try {
+            server.registerForNotification(client.getSessionID(), client);
+        } catch (FileCatalogException e) {
+            System.out.println("There was a problem registering for notification.");
         }
     }
 
