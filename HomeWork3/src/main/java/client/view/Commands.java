@@ -22,11 +22,15 @@ public enum Commands {
 
     UPLOAD,
 
+    UPDATE,
+
     DOWNLOAD,
 
     HELP,
 
     DELETE,
 
-    NOTIFY
+    NOTIFY,
+
+    EXIT
 }

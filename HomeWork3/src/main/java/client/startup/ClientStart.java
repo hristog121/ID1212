@@ -1,7 +1,7 @@
 package client.startup;
 
 import client.model.Client;
-import client.view.UserInterface;
+import client.view.CommandHandler;
 import common.FileCatalog;
 import common.FileCatalogException;
 
@@ -20,7 +20,7 @@ public class ClientStart {
             Object mrun = Naming.lookup("FILE_SERVER");
             FileCatalog server = (FileCatalog) mrun;
             Client client = new Client();
-            UserInterface userInterface = new UserInterface(server, client);
+            CommandHandler commandHandler = new CommandHandler(server, client);
         } catch (RemoteException | NotBoundException | MalformedURLException e) {
             System.out.println("Couldn't find server");
             e.printStackTrace();

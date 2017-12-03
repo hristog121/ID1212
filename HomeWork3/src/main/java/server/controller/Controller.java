@@ -9,6 +9,7 @@ import server.model.FileDescriptor;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Controller extends UnicastRemoteObject implements FileCatalog {
     private FileSystemDAO fileDB;
@@ -17,7 +18,7 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
     public Controller(FileSystemDAO fileDB) throws RemoteException {
         super();
         this.fileDB = fileDB;
-        this.clientNotifyListeners = new HashMap<>();
+        this.clientNotifyListeners = new ConcurrentHashMap<>();
     }
 
     //Method for registering a new user and adding it to the DB -
@@ -45,6 +46,8 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
         try {
             Account account = getAccount(sessionID);
             fileDB.deleteAccount(account);
+            fileDB.deleteSessionForUser(account);
+            removeNotificationListener(account);
         } catch (FileCatalogDBException e) {
             e.printStackTrace();
             throw new FileCatalogException("Can't delete account ", e);
@@ -56,7 +59,6 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
     @Override
     public String logIn(String userName, String passWord) throws FileCatalogException {
         try {
-
             Account account = fileDB.findAccountByName(userName);
             fileDB.deleteSessionForUser(account);
             if (account.getPassWord().equals(passWord)) {
@@ -70,14 +72,15 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
             e.printStackTrace();
             throw new FileCatalogException("Can't find the account ", e);
         }
-
     }
 
     //Log out - delete the started session
     @Override
     public void logOut(String sessionID) throws FileCatalogException {
         try {
+            Account account = getAccount(sessionID);
             fileDB.deleteSession(sessionID);
+            removeNotificationListener(account);
         } catch (FileCatalogDBException e) {
             e.printStackTrace();
             throw new FileCatalogException("Can not log out ", e);
@@ -163,7 +166,7 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
                 int updatedRows = fileDB.deleteFile(fileName);
 
                 final String result;
-                if (updatedRows != 1) {
+                if (updatedRows == 1) {
                     result = "File successfully deleted";
                 } else {
                     result = "File not found";
@@ -246,7 +249,7 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
     }
 
     private boolean canAccessFile(Account account, FileDescriptor file) {
-        if (file.getOwner() == account.getId() || file.getAccessPermissions().equals(AccessPermissions.PUBLIC)) {
+        if (file.getOwner() == account.getId() || (file.getAccessPermissions().equals(AccessPermissions.PUBLIC))) {
             return true;
         }
 
@@ -264,23 +267,28 @@ public class Controller extends UnicastRemoteObject implements FileCatalog {
         }
 
         ClientCatalog clientCatalog = clientNotifyListeners.get(existingFile.getOwner());
+        if (clientCatalog != null) {
+            String message = "Client with user name " + account.getUserName() + " ";
+            switch (fileOperationType) {
+                case READ:
+                    message += "has read";
+                    break;
+                case UPDATE:
+                    message += "has updated";
+                    break;
+                case DELETE:
+                    message += "has deleted";
+                    break;
+            }
 
-        String message = "Client with user name " + account.getUserName() + " ";
-        switch (fileOperationType) {
-            case READ:
-                message += "has read";
-                break;
-            case UPDATE:
-                message += "has updated";
-                break;
-            case DELETE:
-                message += "has deleted";
-                break;
+            message += " your file with name " + existingFile.getName();
+
+            clientCatalog.receiveMessage(message);
         }
+    }
 
-        message += " your file with name " + existingFile.getName();
-
-        clientCatalog.receiveMessage(message);
+    private void removeNotificationListener(Account account){
+        clientNotifyListeners.remove(account.getId());
     }
 }
 

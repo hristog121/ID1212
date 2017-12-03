@@ -9,17 +9,18 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Scanner;
 
-public class UserInterface {
+public class CommandHandler {
     private FileCatalog server;
     private Client client;
     private Scanner sc = new Scanner(System.in);
 
-    public UserInterface(FileCatalog server, Client client) throws FileCatalogException {
+    public CommandHandler(FileCatalog server, Client client) throws FileCatalogException {
 
         this.server = server;
         this.client = client;
 
         System.out.println("Connected to server ...");
+        printCommands();
         run();
     }
 
@@ -31,17 +32,24 @@ public class UserInterface {
         System.out.println("4. To logout type 'logout' ");
         System.out.println("5. To list all files type 'list' ");
         System.out.println("6. To upload file type 'upload' ");
-        System.out.println("7. To delete file type 'delete' ");
-        System.out.println("8. To update file type 'update' ");
-        System.out.println("9. To register for notification when some of your public files is accessed type 'notify' ");
-        System.out.println("10. To see this menu again type 'help' ");
+        System.out.println("7. To download file type 'download' ");
+        System.out.println("8. To delete file type 'delete' ");
+        System.out.println("9. To update file type 'update' ");
+        System.out.println("10. To register for notification when some of your public files is accessed type 'notify' ");
+        System.out.println("11. To see this menu again type 'help' ");
+    }
+
+    private void printShortMenu() {
+        System.out.println("");
+        System.out.println("What do you want to do now? Hint: Choose one of the following commands 'unregister', " +
+                "'login', 'logout', 'list', 'upload', 'download', 'delete', 'update', 'notify', 'help' ");
     }
 
     void run() throws FileCatalogException {
         while (true) {
             try {
 
-                printCommands();
+                printShortMenu();
                 //Convert string to commands
                 Commands commands = readCommand();
                 switch (commands) {
@@ -72,9 +80,15 @@ public class UserInterface {
                     case DELETE:
                         delete();
                         break;
+                    case UPDATE:
+                        update();
+                        break;
                     case NOTIFY:
                         registerForNotification();
                         break;
+                    case EXIT:
+                        logout();
+                        System.exit(1);
                 }
             } catch (RemoteException e) {
                 e.printStackTrace();
