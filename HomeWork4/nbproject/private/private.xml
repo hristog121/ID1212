@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/controller/CoversionRatesInitializer.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/controller/ConverterFacade.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/model/CurrencyDTO.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/model/Currency.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/resources/convertrates.txt</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/controller/StartupBean.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/view/CurrencyManager.java</file>
+            <file>file:/Users/iceroot/Documents/KTH/Year2/P2/Homeworks/ID1212/HomeWork4/src/java/converter/integration/CurrencyDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

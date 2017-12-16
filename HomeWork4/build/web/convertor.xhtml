@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Welcome to EvilTech money exchange</title>
+        <style type="text/css">
+            body {
+                background-color: #8db5f4;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h1>EvilTech presents</h1>
+        <h2>Currency converter</h2>
+
+        <h:form>
+            <hr/>
+            
+            <p>
+                <h:outputLabel for="amount" value="Amount to convert "/>                                
+                <h:inputText id="amount" value="#{convertManager.amount}"/>
+                
+                <h:outputLabel for="inputCurr2" value=" from "/>   
+                <h:selectOneMenu value = "#{convertManager.inputCurr1}"> 
+                    <f:selectItem itemValue = "SEK" itemLabel = "SEK" /> 
+                    <f:selectItem itemValue = "USD" itemLabel = "USD" />
+                    <f:selectItem itemValue = "EUR" itemLabel = "EUR" /> 
+                    <f:selectItem itemValue = "GBP" itemLabel = "GBP" /> 
+                </h:selectOneMenu> 	
+                
+                <h:outputLabel for="inputCurr2" value=" to "/>
+                <h:selectOneMenu value = "#{convertManager.inputCurr2}"> 
+                    <f:selectItem itemValue = "SEK" itemLabel = "SEK" /> 
+                    <f:selectItem itemValue = "USD" itemLabel = "USD" />
+                    <f:selectItem itemValue = "EUR" itemLabel = "EUR" /> 
+                    <f:selectItem itemValue = "GBP" itemLabel = "GBP" /> 
+                </h:selectOneMenu> 
+                <i><br></br><h:outputLabel value="Please type the amount and choose a currency from the dropdown menues"/></i> 
+                <i><br></br><h:outputLabel value="than press 'Convert' to get the result"/></i>     
+
+            </p>
+            <p>
+                <h:commandButton value="Convert" action="#{convertManager.convert}"/>
+            </p>
+            <p>
+                <h:outputLabel value="Result : "/>
+                <h:outputText value="#{convertManager.inputCurr2} #{convertManager.result}"/>                
+            </p>
+
+            <hr/>
+        </h:form>
+
+    </h:body>
+</html>
+
